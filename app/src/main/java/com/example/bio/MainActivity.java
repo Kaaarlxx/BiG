@@ -223,7 +223,7 @@ public class MainActivity extends AppCompatActivity {
                 enemy.setVisibility(View.VISIBLE);
 
                 enemy.setX(r.nextInt(1000)+600);
-                enemy.setY(r.nextInt(dimension.heightPixels)-enemy.getHeight());
+                enemy.setY(r.nextInt(600)-enemy.getHeight());
                 enemy.setImageDrawable(getResources().getDrawable(R.drawable.devil));
                 bullet.setVisibility(View.INVISIBLE);
                 hero.setActroom(2);
@@ -232,7 +232,7 @@ public class MainActivity extends AppCompatActivity {
             else {
                 constraintLayout.setBackground(getResources().getDrawable(R.drawable.backgrnd1));
                 door.setImageDrawable(getResources().getDrawable(R.drawable.doorright));
-                door.setX(1804);
+                door.setX(dimension.widthPixels-door.getWidth());
                 heroview.setX(door.getX()-heroview.getWidth());
                 bullet.setVisibility(View.INVISIBLE);
                 enemy.setVisibility(View.INVISIBLE);
